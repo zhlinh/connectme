@@ -79,12 +79,12 @@ public class WifiApConnect {
         return  false;
     }
 
-    public static void closeWifiAp(Context context) {
+    public static boolean closeWifiAp(Context context) {
         WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-        closeWifiAp(wifiManager);
+        return closeWifiAp(wifiManager);
     }
 
-    private static void closeWifiAp(WifiManager wifiManager) {
+    private static boolean closeWifiAp(WifiManager wifiManager) {
         if (isWifiApEnabled(wifiManager)) {
             try {
                 Method method = wifiManager.getClass().getMethod("getWifiApConfiguration");
@@ -93,7 +93,7 @@ public class WifiApConnect {
                 WifiConfiguration config = (WifiConfiguration) method.invoke(wifiManager);
 
                 Method method2 = wifiManager.getClass().getMethod("setWifiApEnabled", WifiConfiguration.class, boolean.class);
-                method2.invoke(wifiManager, config, false);
+                return (boolean) method2.invoke(wifiManager, config, false);
             } catch (NoSuchMethodException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -108,6 +108,7 @@ public class WifiApConnect {
                 e.printStackTrace();
             }
         }
+        return false;
     }
 
     private static boolean isWifiApEnabled(WifiManager wifiManager) {

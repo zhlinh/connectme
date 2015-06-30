@@ -40,17 +40,19 @@ public class WifiConnect {
     }
 
     // 打开WIFI
-    public void openWifi() {
+    public boolean openWifi() {
         if (!mWifiManager.isWifiEnabled()) {
-            mWifiManager.setWifiEnabled(true);
+            return mWifiManager.setWifiEnabled(true);
         }
+        return true;
     }
 
     // 关闭WIFI
-    public void closeWifi() {
+    public boolean closeWifi() {
         if (mWifiManager.isWifiEnabled()) {
-            mWifiManager.setWifiEnabled(false);
+            return mWifiManager.setWifiEnabled(false);
         }
+        return true;
     }
 
     // 检查当前WIFI状态
@@ -155,7 +157,7 @@ public class WifiConnect {
             mWifiManager.removeNetwork(tempConfig.networkId);
         }
 
-        if(Type == WIFICIPHER_NOPASS) //WIFICIPHER_NOPASS
+        if (Password.equals("") | Type == WIFICIPHER_NOPASS) //WIFICIPHER_NOPASS
         {
             config.wepKeys[0] = "";
             config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE);

@@ -13,8 +13,9 @@ import com.monet.connectme.util.WifiConnect;
 /**
  * Created by Monet on 2015/6/29.
  * Setting in /data/data/com.monet.connectme/files/ConnectTo
- * Example: openWifi(Or openWifiAp),SSID,PASSWORD   [split with ","]
- * Means opening Wifi or open WifiAp using given SSID and PASSWORD.
+ * Example: <CHOOSE>,SSID,PASSWORD   [split with ","]
+ *   where <CHOOSE> can be openWifi | openWifiAp | closeWifi | closeWifiAp.
+ * Means opening Wifi(Ap) or closing Wifi(Ap) using given SSID and PASSWORD.
  */
 public class MainActivity extends Activity {
     private WifiConnect wifiConnect;
@@ -34,21 +35,45 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
+        boolean bool = false;
         // FilesUtil.save(this, "openWifi," + "Test00," + "test123456");
+        // 从配置文件读取信息
         String info = FilesUtil.load(this);
         if (!info.equals("")) {
-            //用空格或逗号分隔SSID和PASSWORD
+            // 用逗号分隔SSID和PASSWORD
             String[] str = info.split(",");
             CHOOSE = str[0];   //选择Wifi还是Wifi热点
             SSID = str[1];    //提取SSID
             PASSWORD = str[2];  //提取PASSWORD
         }
+
+        // 选择不同的操作
         if (CHOOSE.equalsIgnoreCase("openWifiAp")) {
-            openWifiAp();
+            bool = openWifiAp();
+        } else if (CHOOSE.equalsIgnoreCase("openWifi")) {
+            bool = openWifi();
+        }else if (CHOOSE.equalsIgnoreCase("closeWifi")) {
+            bool = closeWifi();
+        }else if (CHOOSE.equalsIgnoreCase("closeWifiAp")) {
+            bool = closeWifiAp();
         } else {
-            openWifi();
+            bool = false;
         }
 
+        // 退出程序
+        if (bool) {
+            // 立即退出
+            finish();
+        } else {
+            try {
+                //5秒后退出
+                Thread.currentThread();
+                Thread.sleep(5000);
+            } catch (InterruptedException ie) {
+                ie.printStackTrace();
+            }
+            finish();
+        }
     }
 
     @Override
@@ -89,5 +114,14 @@ public class MainActivity extends Activity {
     private boolean openWifiAp() {
         wifiApConnect = new WifiApConnect(this);
         return wifiApConnect.openWifiAp(SSID, PASSWORD);
+    }
+
+    private boolean closeWifi() {
+        wifiConnect = new WifiConnect(this);
+        return wifiConnect.closeWifi();
+    }
+
+    private boolean closeWifiAp() {
+        return WifiApConnect.closeWifiAp(this);
     }
 }
