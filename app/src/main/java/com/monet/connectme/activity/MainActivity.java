@@ -12,11 +12,19 @@ import com.monet.connectme.util.WifiConnect;
 
 /**
  * Created by Monet on 2015/6/29.
+ *
+ * USUAGE
+ * --------------------------------------------------------------
  * Setting in /data/data/com.monet.connectme/files/ConnectTo
- * Example: <CHOOSE>,SSID,PASSWORD   [split with ","]
- *   where <CHOOSE> can be openWifi | openWifiAp | closeWifi | closeWifiAp.
- * Means opening Wifi(Ap) or closing Wifi(Ap) using given SSID and PASSWORD.
+ * Example 1: <CHOOSE>,SSID,PASSWORD   [split with ","]
+ *     where <CHOOSE> can be openWifi | openWifiAp .
+ * Means opening Wifi or WifiAp using given SSID and PASSWORD.
+ * Example 2: <CHOOSE>
+ *     where <CHOOSE> can be closeWifi | closeWifiAp .
+ * Means closing Wifi or WifiAp.
+ * --------------------------------------------------------------
  */
+
 public class MainActivity extends Activity {
     private WifiConnect wifiConnect;
     private WifiApConnect wifiApConnect;
@@ -35,18 +43,21 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        boolean bool = false;
+        boolean bool;
         // FilesUtil.save(this, "openWifi," + "Test00," + "test123456");
         // 从配置文件读取信息
         String info = FilesUtil.load(this);
         if (!info.equals("")) {
-            // 用逗号分隔SSID和PASSWORD
-            String[] str = info.split(",");
-            CHOOSE = str[0];   //选择Wifi还是Wifi热点
-            SSID = str[1];    //提取SSID
-            PASSWORD = str[2];  //提取PASSWORD
+            if (info.trim().equalsIgnoreCase("closeWifi") | info.trim().equalsIgnoreCase("closeWifiAp")) {
+                CHOOSE = info.trim();
+            } else {
+                // 用逗号分隔SSID和PASSWORD,并去掉首尾的空格
+                String[] str = info.trim().split(",");
+                CHOOSE = str[0].trim();   //选择Wifi还是Wifi热点
+                SSID = str[1].trim();    //提取SSID
+                PASSWORD = str[2].trim();  //提取PASSWORD
+            }
         }
-
         // 选择不同的操作
         if (CHOOSE.equalsIgnoreCase("openWifiAp")) {
             bool = openWifiAp();
