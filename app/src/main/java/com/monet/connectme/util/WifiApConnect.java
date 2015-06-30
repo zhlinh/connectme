@@ -37,7 +37,7 @@ public class WifiApConnect {
         Method method1 = null;
         try {
             method1 = mWifiManager.getClass().getMethod("setWifiApEnabled",
-                    WifiConfiguration.class, boolean.class);
+                    WifiConfiguration.class, Boolean.TYPE);
             WifiConfiguration netConfig = new WifiConfiguration();
 
             netConfig.SSID = mSSID;
