@@ -2,15 +2,16 @@
 ==============
 ## USUAGE
 --------------------
- **Setting** in /data/data/com.monet.connectme/files/ConnectTo
+ **Settings** in `/data/data/com.monet.connectme/files/ConnectTo`
 
-> Example 1: `<CHOOSE`>,SSID,PASSWORD    [split with ","]
+> Example 1: <`CHOOSE`>,SSID,PASSWORD
 
- * where `<CHOOSE`> can be openWifi | openWifiAp .
+ * Split with ","
+ * where <`CHOOSE`> can be openWifi | openWifiAp .
  * Means opening Wifi or WifiAp using given SSID and PASSWORD.
 
 
-> Example 2: `<CHOOSE`>
+> Example 2: <`CHOOSE`>
 
- * where `<CHOOSE`> can be closeWifi | closeWifiAp .
+ * where <`CHOOSE`> can be closeWifi | closeWifiAp .
  * Means closing Wifi or WifiAp.
