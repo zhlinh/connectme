@@ -15,15 +15,16 @@ import java.io.OutputStreamWriter;
  * Created by Monet on 2015/6/29.
  */
 public class FilesUtil {
-    //文件存放在 /data/data/<package name>/ 下，需要root权限才能查看
+    //文件存放在 /data/data/<package name>/files/ 下，需要root权限才能查看
     public static void save(Context context,String data) {
         FileOutputStream out = null;
         BufferedWriter writer = null;
         try {
+            // 文件名为ConncetTo
             out = context.openFileOutput("ConnectTo", Context.MODE_PRIVATE);
             writer = new BufferedWriter(new OutputStreamWriter(out));
             writer.write(data);
-            Log.e("file", "save succeed.");
+            Log.e("file", "write configure file succeed.");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -43,6 +44,7 @@ public class FilesUtil {
         BufferedReader reader = null;
         StringBuilder content = new StringBuilder();
         try {
+            //文件名为ConnectTo
             in = context.openFileInput("ConnectTo");
             reader = new BufferedReader(new InputStreamReader(in));
             String line = "";
@@ -60,7 +62,7 @@ public class FilesUtil {
                 }
             }
         }
-        Log.e("file", "read succeed.");
+        Log.e("file", "read configure file succeed.");
         return content.toString();
     }
 

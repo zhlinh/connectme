@@ -1,9 +1,9 @@
 package com.monet.connectme.util;
 
 import android.content.Context;
+import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
-import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 
 import java.util.List;
@@ -18,30 +18,37 @@ public class WifiConnect {
 
     // 定义WifiManager对象
     private WifiManager mWifiManager;
-    // 定义WifiInfo对象
+    // 得到所连接的AP信息
     private WifiInfo mWifiInfo;
     // 扫描出的网络连接列表
     private List<ScanResult> mWifiList;
-    // 网络连接列表
+    // 保存的连接过的网络列表
     private List<WifiConfiguration> mWifiConfiguration;
+    // Context
+    private Context mContext;
 
 
     // 构造器
     public WifiConnect(Context context) {
+        mContext = context;
         // 取得WifiManager对象
-        mWifiManager = (WifiManager) context
-                .getSystemService(Context.WIFI_SERVICE);
+        mWifiManager = (WifiManager) mContext .getSystemService(Context.WIFI_SERVICE);
         // 取得WifiInfo对象
         mWifiInfo = mWifiManager.getConnectionInfo();
+        // 保存的连接过的网络列表
+        mWifiConfiguration = mWifiManager.getConfiguredNetworks();
+        // 扫描出的网络连接列表
+        mWifiList = mWifiManager.getScanResults();
     }
 
-    public WifiManager getWifiManager() {
-        return this.mWifiManager;
-    }
 
-    // 打开WIFI
+    // 此处的openWifi只是打开Wifi，不含连接某个AP的操作,还需要addNetwork
     public boolean openWifi() {
         if (!mWifiManager.isWifiEnabled()) {
+            // 先关闭WifiAp，因为会与Wifi冲突
+            WifiApConnect wifiApConnect = new WifiApConnect(mContext);
+            wifiApConnect.closeWifiAp();
+            // 开启Wifi
             return mWifiManager.setWifiEnabled(true);
         }
         return true;
@@ -63,6 +70,7 @@ public class WifiConnect {
 
     // 得到配置好的网络
     public List<WifiConfiguration> getConfiguration() {
+        mWifiConfiguration = mWifiManager.getConfiguredNetworks();
         return mWifiConfiguration;
     }
 
@@ -77,16 +85,13 @@ public class WifiConnect {
                 true);
     }
 
-    public void startScan() {
-        mWifiManager.startScan();
-        // 得到扫描结果
-        mWifiList = mWifiManager.getScanResults();
-        // 得到配置好的网络连接
-        mWifiConfiguration = mWifiManager.getConfiguredNetworks();
+    public WifiManager getWifiManager() {
+        return mWifiManager;
     }
 
     // 得到网络列表
-    public List<ScanResult> getWifiList() {
+    public List<ScanResult> getScanResults() {
+        mWifiList = mWifiManager.getScanResults();
         return mWifiList;
     }
 
@@ -114,6 +119,10 @@ public class WifiConnect {
         return (mWifiInfo == null) ? "NULL" : mWifiInfo.getBSSID();
     }
 
+    public int getRssi() {
+        return (mWifiInfo == null) ? 0 : mWifiInfo.getRssi();
+    }
+
     // 得到IP地址
     public int getIPAddress() {
         return (mWifiInfo == null) ? 0 : mWifiInfo.getIpAddress();
@@ -126,6 +135,7 @@ public class WifiConnect {
 
     // 得到WifiInfo的所有信息包
     public String getWifiInfo() {
+        mWifiInfo = mWifiManager.getConnectionInfo();
         return (mWifiInfo == null) ? "NULL" : mWifiInfo.toString();
     }
 
@@ -137,7 +147,8 @@ public class WifiConnect {
     }
 
     // 断开指定ID的网络
-    public void disconnectWifi(int netId) { mWifiManager.disableNetwork(netId);
+    public void disconnectWifi(int netId) {
+        mWifiManager.disableNetwork(netId);
         mWifiManager.disconnect();
     }
 
