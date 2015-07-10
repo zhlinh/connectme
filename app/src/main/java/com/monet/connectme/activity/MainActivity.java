@@ -1,10 +1,14 @@
 package com.monet.connectme.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.telephony.PhoneStateListener;
+import android.telephony.SignalStrength;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -39,17 +43,20 @@ public class MainActivity extends Activity {
     private WifiConnect mWifiConnect;
     private WifiApConnect mWifiApConnect;
     private WifiConfiguration mWifiConfiguration;
-    private static String SSID = "OpenWrt_2.4G_02";
-    private static String PASSWORD = "aaaaaaaa";
-    private static String CHOOSE = "openNetwork";
-    private static int signalStrengthValue = 0;
-    private static int rssi = 0;
+    private static String SSID = "TestConnectMe";
+    private static String PASSWORD = "";
+    private static String CHOOSE = "openWifiAp";
+    private static int signalStrengthValue = -1000;
+    private static int rssi = -500;
+    MobileSignalListener mMobileSignalListener;
+    TelephonyManager mTelephonyManager;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initSignalListener();
     }
 
     @Override
@@ -95,7 +102,7 @@ public class MainActivity extends Activity {
             doneWell = false;
         }
         // 主动退出程序
-        //sayGoodBye(doneWell);
+        sayGoodBye(doneWell);
     }
 
     private boolean openWifi() {
@@ -150,7 +157,9 @@ public class MainActivity extends Activity {
     }
 
     private boolean openNetwork() {
-        // Step1: 获取rssi
+        /**
+         *  Step1: 获取rssi
+         */
         mWifiConnect = new WifiConnect(this);
         //获取RSSI需要先打开Wifi，但不需要连接
         mWifiConnect.openWifi();
@@ -175,8 +184,14 @@ public class MainActivity extends Activity {
         }
         //下面这个是得到所连接的AP的RSSI，在此处不太适用
         //rssi = mWifiConnect.getRssi();
-        // Step2: 获取signalStrengthValue
-        signalStrengthValue = MobileConnect.getSignalStrengthValue(this);
+        /**
+         *  Step2: 获取signalStrengthValue
+         */
+        int tempSignal = MobileConnect.getSignalStrengthValue(this);  //获取的一直是neighbor Cell的Signal,值比较小
+        if (tempSignal > signalStrengthValue) {
+            // 很少被执行的
+            signalStrengthValue = tempSignal;
+        }
         Log.e("Main", "rssi: " + rssi);
         Log.e("Main", "mobileSignal: " + signalStrengthValue);
         Toast.makeText(this, "rssi " + rssi + "  " + signalStrengthValue + " signal", Toast.LENGTH_LONG).show();
@@ -221,6 +236,32 @@ public class MainActivity extends Activity {
         }
     }
 
+
+    private void initSignalListener() {
+        try {
+            mMobileSignalListener = new MobileSignalListener();
+            mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+            mTelephonyManager.listen(mMobileSignalListener, PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public class MobileSignalListener extends PhoneStateListener {
+        public void onSignalStrengthsChanged(SignalStrength signalStrength) {
+            super.onSignalStrengthsChanged(signalStrength);
+            if (signalStrength.isGsm()) {
+                if (signalStrength.getGsmSignalStrength() != 99)
+                    signalStrengthValue = signalStrength.getGsmSignalStrength() * 2 - 113;
+                else
+                    signalStrengthValue  = signalStrength.getGsmSignalStrength();
+            } else {
+                signalStrengthValue  = signalStrength.getCdmaDbm();
+            }
+            Log.e("Main", "Changed" + signalStrengthValue);
+        }
+    }
 
     @Override
 

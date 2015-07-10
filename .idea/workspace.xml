@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41bca61b-a491-4fb3-aa6c-f7f30fcf5e0c" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Project\Lab\ConnectMe\.idea\libraries\appcompat_v7_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Project\Lab\ConnectMe\.idea\libraries\support_annotations_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Project\Lab\ConnectMe\.idea\libraries\support_v4_21_0_3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/FilesUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/FilesUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/activity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/WifiApConnect.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/WifiApConnect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/WifiConnect.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/WifiConnect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ConnectMe.iws" />
@@ -98,10 +89,6 @@
               <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7144#7145#0" expanded="true" />
-                <element signature="e#7202#7203#0" expanded="true" />
-                <element signature="e#7256#7257#0" expanded="true" />
-                <element signature="e#7315#7316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,14 +107,18 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/monet/connectme/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51265824">
-              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.39873418">
+              <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4884#4885#0" expanded="true" />
-                <element signature="e#4933#4934#0" expanded="true" />
-                <element signature="e#4966#4967#0" expanded="true" />
-                <element signature="e#5016#5017#0" expanded="true" />
+                <element signature="e#5157#5158#0" expanded="true" />
+                <element signature="e#5206#5207#0" expanded="true" />
+                <element signature="e#5239#5240#0" expanded="true" />
+                <element signature="e#5289#5290#0" expanded="true" />
+                <element signature="e#9021#9022#0" expanded="true" />
+                <element signature="e#9051#9052#0" expanded="true" />
+                <element signature="e#9099#9100#0" expanded="true" />
+                <element signature="e#9132#9133#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,8 +164,20 @@
                 <element signature="imports" expanded="false" />
                 <element signature="e#4556#4557#0" expanded="false" />
                 <element signature="e#4582#4583#0" expanded="false" />
+                <element signature="e#6160#6191#0" expanded="false" />
+                <element signature="e#6527#6545#0" expanded="false" />
+                <element signature="e#6859#6872#0" expanded="false" />
+                <element signature="e#7008#7029#0" expanded="false" />
+                <element signature="e#8273#8307#0" expanded="false" />
+                <element signature="e#8408#8442#0" expanded="false" />
+                <element signature="e#8538#8560#0" expanded="false" />
                 <element signature="e#9271#9272#0" expanded="false" />
                 <element signature="e#9359#9360#0" expanded="false" />
+                <element signature="e#9523#9558#0" expanded="false" />
+                <element signature="e#9651#9678#0" expanded="false" />
+                <element signature="e#9770#9801#0" expanded="false" />
+                <element signature="e#9909#9946#0" expanded="false" />
+                <element signature="e#10057#10104#0" expanded="false" />
                 <element signature="e#15973#15974#0" expanded="false" />
                 <element signature="e#16042#16043#0" expanded="false" />
                 <element signature="e#26639#26640#0" expanded="false" />
@@ -213,10 +216,14 @@
                 <element signature="e#76460#76461#0" expanded="false" />
                 <element signature="e#92053#92054#0" expanded="false" />
                 <element signature="e#92107#92108#0" expanded="false" />
+                <element signature="e#92453#92465#0" expanded="false" />
                 <element signature="e#92648#92649#0" expanded="false" />
                 <element signature="e#92699#92700#0" expanded="false" />
+                <element signature="e#108720#108728#0" expanded="false" />
                 <element signature="e#108932#108933#0" expanded="false" />
                 <element signature="e#108984#108985#0" expanded="false" />
+                <element signature="e#166041#166062#0" expanded="false" />
+                <element signature="e#191255#191295#0" expanded="false" />
                 <element signature="e#213822#213823#0" expanded="false" />
                 <element signature="e#213880#213881#0" expanded="false" />
                 <element signature="e#218628#218629#0" expanded="false" />
@@ -1592,104 +1599,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnectMe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnectMe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnectMe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnectMe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectme" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnectMe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectme" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnectMe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1859,6 +1768,104 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectme" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectme" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectMe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2100,7 +2107,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="0" />
+    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2171,10 +2178,14 @@
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#9021#9022#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2195,8 +2206,20 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4556#4557#0" expanded="false" />
             <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#6160#6191#0" expanded="false" />
+            <element signature="e#6527#6545#0" expanded="false" />
+            <element signature="e#6859#6872#0" expanded="false" />
+            <element signature="e#7008#7029#0" expanded="false" />
+            <element signature="e#8273#8307#0" expanded="false" />
+            <element signature="e#8408#8442#0" expanded="false" />
+            <element signature="e#8538#8560#0" expanded="false" />
             <element signature="e#9271#9272#0" expanded="false" />
             <element signature="e#9359#9360#0" expanded="false" />
+            <element signature="e#9523#9558#0" expanded="false" />
+            <element signature="e#9651#9678#0" expanded="false" />
+            <element signature="e#9770#9801#0" expanded="false" />
+            <element signature="e#9909#9946#0" expanded="false" />
+            <element signature="e#10057#10104#0" expanded="false" />
             <element signature="e#15973#15974#0" expanded="false" />
             <element signature="e#16042#16043#0" expanded="false" />
             <element signature="e#26639#26640#0" expanded="false" />
@@ -2235,10 +2258,14 @@
             <element signature="e#76460#76461#0" expanded="false" />
             <element signature="e#92053#92054#0" expanded="false" />
             <element signature="e#92107#92108#0" expanded="false" />
+            <element signature="e#92453#92465#0" expanded="false" />
             <element signature="e#92648#92649#0" expanded="false" />
             <element signature="e#92699#92700#0" expanded="false" />
+            <element signature="e#108720#108728#0" expanded="false" />
             <element signature="e#108932#108933#0" expanded="false" />
             <element signature="e#108984#108985#0" expanded="false" />
+            <element signature="e#166041#166062#0" expanded="false" />
+            <element signature="e#191255#191295#0" expanded="false" />
             <element signature="e#213822#213823#0" expanded="false" />
             <element signature="e#213880#213881#0" expanded="false" />
             <element signature="e#218628#218629#0" expanded="false" />
@@ -2302,10 +2329,14 @@
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#9021#9022#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2326,8 +2357,20 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4556#4557#0" expanded="false" />
             <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#6160#6191#0" expanded="false" />
+            <element signature="e#6527#6545#0" expanded="false" />
+            <element signature="e#6859#6872#0" expanded="false" />
+            <element signature="e#7008#7029#0" expanded="false" />
+            <element signature="e#8273#8307#0" expanded="false" />
+            <element signature="e#8408#8442#0" expanded="false" />
+            <element signature="e#8538#8560#0" expanded="false" />
             <element signature="e#9271#9272#0" expanded="false" />
             <element signature="e#9359#9360#0" expanded="false" />
+            <element signature="e#9523#9558#0" expanded="false" />
+            <element signature="e#9651#9678#0" expanded="false" />
+            <element signature="e#9770#9801#0" expanded="false" />
+            <element signature="e#9909#9946#0" expanded="false" />
+            <element signature="e#10057#10104#0" expanded="false" />
             <element signature="e#15973#15974#0" expanded="false" />
             <element signature="e#16042#16043#0" expanded="false" />
             <element signature="e#26639#26640#0" expanded="false" />
@@ -2366,10 +2409,14 @@
             <element signature="e#76460#76461#0" expanded="false" />
             <element signature="e#92053#92054#0" expanded="false" />
             <element signature="e#92107#92108#0" expanded="false" />
+            <element signature="e#92453#92465#0" expanded="false" />
             <element signature="e#92648#92649#0" expanded="false" />
             <element signature="e#92699#92700#0" expanded="false" />
+            <element signature="e#108720#108728#0" expanded="false" />
             <element signature="e#108932#108933#0" expanded="false" />
             <element signature="e#108984#108985#0" expanded="false" />
+            <element signature="e#166041#166062#0" expanded="false" />
+            <element signature="e#191255#191295#0" expanded="false" />
             <element signature="e#213822#213823#0" expanded="false" />
             <element signature="e#213880#213881#0" expanded="false" />
             <element signature="e#218628#218629#0" expanded="false" />
@@ -2433,10 +2480,14 @@
           <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#9021#9022#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2457,8 +2508,20 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4556#4557#0" expanded="false" />
             <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#6160#6191#0" expanded="false" />
+            <element signature="e#6527#6545#0" expanded="false" />
+            <element signature="e#6859#6872#0" expanded="false" />
+            <element signature="e#7008#7029#0" expanded="false" />
+            <element signature="e#8273#8307#0" expanded="false" />
+            <element signature="e#8408#8442#0" expanded="false" />
+            <element signature="e#8538#8560#0" expanded="false" />
             <element signature="e#9271#9272#0" expanded="false" />
             <element signature="e#9359#9360#0" expanded="false" />
+            <element signature="e#9523#9558#0" expanded="false" />
+            <element signature="e#9651#9678#0" expanded="false" />
+            <element signature="e#9770#9801#0" expanded="false" />
+            <element signature="e#9909#9946#0" expanded="false" />
+            <element signature="e#10057#10104#0" expanded="false" />
             <element signature="e#15973#15974#0" expanded="false" />
             <element signature="e#16042#16043#0" expanded="false" />
             <element signature="e#26639#26640#0" expanded="false" />
@@ -2497,10 +2560,14 @@
             <element signature="e#76460#76461#0" expanded="false" />
             <element signature="e#92053#92054#0" expanded="false" />
             <element signature="e#92107#92108#0" expanded="false" />
+            <element signature="e#92453#92465#0" expanded="false" />
             <element signature="e#92648#92649#0" expanded="false" />
             <element signature="e#92699#92700#0" expanded="false" />
+            <element signature="e#108720#108728#0" expanded="false" />
             <element signature="e#108932#108933#0" expanded="false" />
             <element signature="e#108984#108985#0" expanded="false" />
+            <element signature="e#166041#166062#0" expanded="false" />
+            <element signature="e#191255#191295#0" expanded="false" />
             <element signature="e#213822#213823#0" expanded="false" />
             <element signature="e#213880#213881#0" expanded="false" />
             <element signature="e#218628#218629#0" expanded="false" />
@@ -2571,10 +2638,14 @@
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#9021#9022#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2595,8 +2666,20 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4556#4557#0" expanded="false" />
             <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#6160#6191#0" expanded="false" />
+            <element signature="e#6527#6545#0" expanded="false" />
+            <element signature="e#6859#6872#0" expanded="false" />
+            <element signature="e#7008#7029#0" expanded="false" />
+            <element signature="e#8273#8307#0" expanded="false" />
+            <element signature="e#8408#8442#0" expanded="false" />
+            <element signature="e#8538#8560#0" expanded="false" />
             <element signature="e#9271#9272#0" expanded="false" />
             <element signature="e#9359#9360#0" expanded="false" />
+            <element signature="e#9523#9558#0" expanded="false" />
+            <element signature="e#9651#9678#0" expanded="false" />
+            <element signature="e#9770#9801#0" expanded="false" />
+            <element signature="e#9909#9946#0" expanded="false" />
+            <element signature="e#10057#10104#0" expanded="false" />
             <element signature="e#15973#15974#0" expanded="false" />
             <element signature="e#16042#16043#0" expanded="false" />
             <element signature="e#26639#26640#0" expanded="false" />
@@ -2635,10 +2718,14 @@
             <element signature="e#76460#76461#0" expanded="false" />
             <element signature="e#92053#92054#0" expanded="false" />
             <element signature="e#92107#92108#0" expanded="false" />
+            <element signature="e#92453#92465#0" expanded="false" />
             <element signature="e#92648#92649#0" expanded="false" />
             <element signature="e#92699#92700#0" expanded="false" />
+            <element signature="e#108720#108728#0" expanded="false" />
             <element signature="e#108932#108933#0" expanded="false" />
             <element signature="e#108984#108985#0" expanded="false" />
+            <element signature="e#166041#166062#0" expanded="false" />
+            <element signature="e#191255#191295#0" expanded="false" />
             <element signature="e#213822#213823#0" expanded="false" />
             <element signature="e#213880#213881#0" expanded="false" />
             <element signature="e#218628#218629#0" expanded="false" />
@@ -2709,10 +2796,14 @@
           <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#9021#9022#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2733,8 +2824,20 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4556#4557#0" expanded="false" />
             <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#6160#6191#0" expanded="false" />
+            <element signature="e#6527#6545#0" expanded="false" />
+            <element signature="e#6859#6872#0" expanded="false" />
+            <element signature="e#7008#7029#0" expanded="false" />
+            <element signature="e#8273#8307#0" expanded="false" />
+            <element signature="e#8408#8442#0" expanded="false" />
+            <element signature="e#8538#8560#0" expanded="false" />
             <element signature="e#9271#9272#0" expanded="false" />
             <element signature="e#9359#9360#0" expanded="false" />
+            <element signature="e#9523#9558#0" expanded="false" />
+            <element signature="e#9651#9678#0" expanded="false" />
+            <element signature="e#9770#9801#0" expanded="false" />
+            <element signature="e#9909#9946#0" expanded="false" />
+            <element signature="e#10057#10104#0" expanded="false" />
             <element signature="e#15973#15974#0" expanded="false" />
             <element signature="e#16042#16043#0" expanded="false" />
             <element signature="e#26639#26640#0" expanded="false" />
@@ -2773,10 +2876,14 @@
             <element signature="e#76460#76461#0" expanded="false" />
             <element signature="e#92053#92054#0" expanded="false" />
             <element signature="e#92107#92108#0" expanded="false" />
+            <element signature="e#92453#92465#0" expanded="false" />
             <element signature="e#92648#92649#0" expanded="false" />
             <element signature="e#92699#92700#0" expanded="false" />
+            <element signature="e#108720#108728#0" expanded="false" />
             <element signature="e#108932#108933#0" expanded="false" />
             <element signature="e#108984#108985#0" expanded="false" />
+            <element signature="e#166041#166062#0" expanded="false" />
+            <element signature="e#191255#191295#0" expanded="false" />
             <element signature="e#213822#213823#0" expanded="false" />
             <element signature="e#213880#213881#0" expanded="false" />
             <element signature="e#218628#218629#0" expanded="false" />
@@ -2805,23 +2912,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0625">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://D:/Program Files/Android/sdk/sources/android-21/java/lang/reflect/Method.java">
@@ -2847,8 +2954,20 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4556#4557#0" expanded="false" />
             <element signature="e#4582#4583#0" expanded="false" />
+            <element signature="e#6160#6191#0" expanded="false" />
+            <element signature="e#6527#6545#0" expanded="false" />
+            <element signature="e#6859#6872#0" expanded="false" />
+            <element signature="e#7008#7029#0" expanded="false" />
+            <element signature="e#8273#8307#0" expanded="false" />
+            <element signature="e#8408#8442#0" expanded="false" />
+            <element signature="e#8538#8560#0" expanded="false" />
             <element signature="e#9271#9272#0" expanded="false" />
             <element signature="e#9359#9360#0" expanded="false" />
+            <element signature="e#9523#9558#0" expanded="false" />
+            <element signature="e#9651#9678#0" expanded="false" />
+            <element signature="e#9770#9801#0" expanded="false" />
+            <element signature="e#9909#9946#0" expanded="false" />
+            <element signature="e#10057#10104#0" expanded="false" />
             <element signature="e#15973#15974#0" expanded="false" />
             <element signature="e#16042#16043#0" expanded="false" />
             <element signature="e#26639#26640#0" expanded="false" />
@@ -2887,10 +3006,14 @@
             <element signature="e#76460#76461#0" expanded="false" />
             <element signature="e#92053#92054#0" expanded="false" />
             <element signature="e#92107#92108#0" expanded="false" />
+            <element signature="e#92453#92465#0" expanded="false" />
             <element signature="e#92648#92649#0" expanded="false" />
             <element signature="e#92699#92700#0" expanded="false" />
+            <element signature="e#108720#108728#0" expanded="false" />
             <element signature="e#108932#108933#0" expanded="false" />
             <element signature="e#108984#108985#0" expanded="false" />
+            <element signature="e#166041#166062#0" expanded="false" />
+            <element signature="e#191255#191295#0" expanded="false" />
             <element signature="e#213822#213823#0" expanded="false" />
             <element signature="e#213880#213881#0" expanded="false" />
             <element signature="e#218628#218629#0" expanded="false" />
@@ -2972,20 +3095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/MobileConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7144#7145#0" expanded="true" />
-            <element signature="e#7202#7203#0" expanded="true" />
-            <element signature="e#7256#7257#0" expanded="true" />
-            <element signature="e#7315#7316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/FilesUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2994,16 +3103,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/monet/connectme/activity/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/monet/connectme/util/MobileConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51265824">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-            <element signature="e#4966#4967#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/monet/connectme/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39873418">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5289#5290#0" expanded="true" />
+            <element signature="e#9021#9022#0" expanded="true" />
+            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9132#9133#0" expanded="true" />
           </folding>
         </state>
       </provider>
