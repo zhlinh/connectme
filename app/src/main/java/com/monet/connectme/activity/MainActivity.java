@@ -25,7 +25,7 @@ import java.util.List;
  * <p/>
  * USUAGE
  * --------------------------------------------------------------
- * Setting in /data/data/com.monet.connectme/files/ConnectTo
+ * Setting in /ConnectMe/config
  *
  * Example 1: <CHOOSE>,SSID,PASSWORD   [split with ","]
  * where <CHOOSE> can be openWifi | openWifiAp | openNetwork.
@@ -63,9 +63,26 @@ public class MainActivity extends Activity {
     protected void onStart() {
         super.onStart();
         boolean doneWell = false;
+        String info = "";
+        /**
+         * 写文件只是为了测试用
+        */
         // FilesUtil.save(this, "openWifi," + "Test00," + "test123456");
+        //try {
+        //    FilesUtil.writeFile("openWifi," + "Test00," + "test123456");
+        //} catch (Exception e) {
+        //    e.printStackTrace();
+        //}
+        /**
+         * 读文件
+         */
+        try {
+            info = FilesUtil.readFile();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         // 从配置文件读取信息
-        String info = FilesUtil.load(this);
+        //String info = FilesUtil.load(this);
         if (!info.equals("")) {
             // 有三个词的情况
             if (info.contains(",")) {
