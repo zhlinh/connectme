@@ -5,7 +5,7 @@ connectme
 Update: 2015-07-13
 
 
- **Settings** in `/ConnectMe/config`
+ **Settings** in `/mnt/sdcard/ConnectMe/config`
 
 > Example 1: <`CHOOSE`>,SSID,PASSWORD
 

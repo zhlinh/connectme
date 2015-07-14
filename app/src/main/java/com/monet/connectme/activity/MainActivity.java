@@ -25,7 +25,7 @@ import java.util.List;
  * <p/>
  * USUAGE
  * --------------------------------------------------------------
- * Setting in /ConnectMe/config
+ * Setting in /mnt/sdcard/ConnectMe/config
  *
  * Example 1: <CHOOSE>,SSID,PASSWORD   [split with ","]
  * where <CHOOSE> can be openWifi | openWifiAp | openNetwork.
