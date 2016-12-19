@@ -22,3 +22,17 @@ Update: 2015-07-13
 
 
 **Totally 8 choices .**
+
+
+> Initiate App
+
+Install:
+```
+adb [-s <Device Serial Num>] push connectme-android-1.0.0.apk data/local/tmp/com.monet.connectme
+adb [-s <Device Serial Num>] shell pm install -r "/data/local/tmp/com.monet.connectme"
+```
+
+Launch:
+```
+adb [-s <Device Serial Num>] shell am start -n "com.monet.connectme/com.monet.connectme.activity.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+```
